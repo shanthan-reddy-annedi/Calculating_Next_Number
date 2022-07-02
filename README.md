@@ -45,3 +45,22 @@ mvn spring-boot:run
 ```
 
 The app will start running at http://localhost:8080/**.
+
+**6. Exploring REST API**
+
++ we can see the API Documentation at
+```bash
+http://localhost:8080/swagger-ui.html
+```
++ we can see our main API at
+```bash
+http://localhost:8080/FetchNextNumber 
+```
+**7. Running the API**
++ to run our main Api FetchNextNumber we need to give it a responsebody, as shown
+```bash
+{
+    "categoryCode":2
+} 
+```
++ if there is no entry of categoryCode in our database we will get 0 as our old value next value as new value and added to database.
