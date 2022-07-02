@@ -1,0 +1,30 @@
+Patterns:
+
+Singleton Pattern:
+
+	1. The singleton pattern is a mechanism that ensures only one instance of an object exists per application.
+
+	Singleton Beans:
+		A singleton is globally unique for an application, but in Spring, this constraint is relaxed. 
+		Instead, Spring restricts a singleton to one object per Spring IoC container. In practice, this means Spring will only create one bean for each type per application context.
+		Spring's approach differs from the strict definition of a singleton since an application can have more than one Spring container.
+		Therefore, multiple objects of the same class can exist in a single application if we have multiple containers.
+	
+
+Dependency injection:
+
+	Dependency Injection is a fundamental aspect of the Spring framework, through which the Spring container “injects” objects into other objects or “dependencies”.
+	Simply put, this allows for loose coupling of components and moves the responsibility of managing components onto the container.
+	Dependency Injection can be implemented in spring boot by mainly two ways
+		1. using @Autowired Annotation.
+		2. Using Contructors.
+
+Architecture Pattern:
+
+MVC Architecture:
+	MVC is known as Mdel-View-Controller. its an architectural pattern where the application is divided into Three Components.
+		.The model
+		.the View
+		. the Controller
+	
+	Each of these components are built to handle specific development aspects of an application

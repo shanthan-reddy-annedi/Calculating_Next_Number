@@ -27,7 +27,7 @@ Steps to Setup
     . after changing both the username and password as per your mysql installation
     . we can run it from NeatBeans or intellij IDEA.
 
-4. Build and running the app using maven**
+4. Build and running the app using maven
     . open the terminal in the project folder and run the following commands.
 
         mvn package
