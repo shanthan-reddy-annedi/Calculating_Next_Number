@@ -22,7 +22,7 @@ public class NextNumberService {
         return (n % 9 == 0) ? 9 : (n % 9);
     }
 
-    private int maxNum(int num) throws InterruptedException {
+    private int maxNum(int num){
         while (true){
             ++num;
             if(digSum(num)==1){
@@ -54,7 +54,7 @@ public class NextNumberService {
 
     }
 
-    public NextNumberResponse operations(UserRequestBody userRequestBody) throws InterruptedException {
+    public NextNumberResponse operations(UserRequestBody userRequestBody) {
         NextNumberModel nextNumberModel = getEntryFromDb(userRequestBody);
         int oldvalue = nextNumberModel.getValue();
         int updatevalue = maxNum(oldvalue);
